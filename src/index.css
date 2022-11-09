@@ -1,3 +1,18 @@
 body {
   margin: 0;
 }
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.booker {
+  display: flex;
+  flex-direction: column;
+}
+
+.invalid-date {
+  background-color: red;
+}
