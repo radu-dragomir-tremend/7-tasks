@@ -1,16 +1,13 @@
-import React, { useRef } from 'react';
+import { useCounter } from './TaskOneController';
 
 const TaskOne = () => {
-  const inputRef = useRef();
-  const increaseCount = () => {
-    inputRef.current.value++;
-  };
+  const [count, increaseCount] = useCounter();
 
   return (
     <div className='container'>
       <h2>Task One: Counter</h2>
       <div>
-        <input readOnly ref={inputRef} defaultValue={0} />
+        <input readOnly value={count.toString()} />
         <button onClick={increaseCount}>Count!</button>
       </div>
     </div>
