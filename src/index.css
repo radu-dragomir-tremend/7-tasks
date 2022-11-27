@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-bottom: 200px;
 }
 .container {
   display: flex;
@@ -57,4 +58,37 @@ meter {
 
 .card button {
   width: 100px;
+}
+
+.card-xl {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+}
+
+.card-xl .canvas {
+  width: 350px;
+  height: 300px;
+  position: relative;
+  border: 1px solid gray;
+  background-color: #fff;
+}
+
+
+.circle {
+  position: absolute;
+  border-radius: 100px;
+  border: 1px solid black;
+  translate: -50% -50%;
+}
+
+.menu {
+  background-color: lightgray;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
