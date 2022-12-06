@@ -5,7 +5,7 @@ export const useConvertor = () => {
   const [fahrenheit, setFahrenheit] = useState<number | null>();
 
   const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    const targetElement = event.target as HTMLInputElement;
+    const targetElement = event.target;
     const targetElementValue = +targetElement.value;
     if (targetElement.value === '') {
       setCelsius(null);
